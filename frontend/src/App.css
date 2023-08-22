@@ -1,0 +1,72 @@
+.app {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.side-panel {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 3;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.subject-list ul, .side-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subject-list li {
+  margin-bottom: 20px;
+}
+
+.subject-list li ul {
+  padding-left: 20px;
+}
