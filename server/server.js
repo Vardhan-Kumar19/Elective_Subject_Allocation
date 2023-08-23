@@ -74,9 +74,9 @@ app.get('/allocate-subjects', async (req, res) => {
     try {
         const students = await Student.find().sort({ studentCGPA: -1 });
         const subjects = [
-            { subjectID: "Graph Algorithms", maxIntake: 10 },
-            { subjectID: "Embedded Systems", maxIntake: 10 },
-            { subjectID: "Image Processing", maxIntake: 10 }
+            { subjectID: "Graph Algorithms", maxIntake: 5 },
+            { subjectID: "Embedded Systems", maxIntake: 5 },
+            { subjectID: "Image Processing", maxIntake: 5 }
         ];
 
         let subjectAllocations = subjects.map(subject => {
